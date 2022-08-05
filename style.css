@@ -1,0 +1,534 @@
+/*リセットCSS*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  text-decoration: none;
+  color: black;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000; 
+  font-style:italic;
+   font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;   
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+/*common-----------------------------------------*/
+
+* {/*警告「(*)を使用の通知」*/
+  box-sizing: border-box;
+}
+
+body {
+    color: #000;
+    font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+/*header-----------------------------------------*/
+
+header {
+  padding: 20px 0;
+  width: 100%;
+  position: absolute;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 36px;
+  max-width: 100%;
+  position: relative;
+}
+
+.header_logo {
+  height: 20px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+}
+
+.nav_list_itemu {
+  margin-right: 46px;
+  
+}
+
+ul li a:first-child {
+  font-family: 'Lato',sans-serif;
+  line-height: 1.5;
+}
+
+ul li a + a {
+  display: block;
+  font-size: 10px;
+}
+
+#header_button {
+  font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+
+.counseling_button {
+  color: white;
+  background-color: #f79214;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+
+ul li .counseling_button {
+  padding: 0 20px;
+  height: 40px;
+}
+
+/*main(first_view)--------------------------------------------*/
+
+.main {
+  padding-top: 60px;
+}
+
+.first_view {
+  padding: 100px 0 28px;/*警告文「パディングで幅を使用すると、要素が予想よりも大きくなる場合があります。」*/
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.first_view_sp {
+  display: none;
+}
+
+.firstview_container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 50px;
+  position: relative;
+}
+
+.firstview_content {
+  margin-bottom: 70px;
+  width: fit-content;
+}
+
+.firstview_title {
+  color: #000;
+  font-family: 'Lato',sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 54px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.firstview_images {
+  margin-bottom: 25px;
+}
+
+.firstview_images img {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.firstview_images img:nth-of-type(2) {
+  width: 40%;
+}
+
+.firstview_images img:last-of-type {
+  margin: 0;
+}
+
+.firstview_buttons {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.firstview_buttons a {
+  display: flex;
+  justify-content: center;
+  border-radius: 32px;
+  font-size: 16px;
+  font-weight: 700;
+  align-items: center;
+}
+
+.firstview_button_1 {
+  margin-right: 15px;
+  width: 306px;
+}
+
+.firstview_button_2 {
+  width: 176px;
+  border: 1px solid #e0e0e0;/*警告文「ボーダーと高さを使用すると、要素が予想よりも大きくなる場合があります。」*/
+  background-color: white;
+}
+
+.firstview_container p {
+  color: #a2a2a4;
+  line-height: 1.5;
+}
+
+/*main(about_wrapper)------------------------------------------*/
+
+.about_wrapper {
+  background-color: #f79214;
+  padding: 44px 0;
+}
+
+section.about {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+video {
+  width: 50%;
+}
+
+.about_potepan {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 32px;
+  margin-bottom: 0;
+}
+
+.about_potepan h2, .about_potepan p {
+  color: white;
+}
+
+.about_potepan h2 {
+  font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+  font-size: 38px;
+  font-weight: 900;
+  letter-spacing: .5px;
+  line-height: 54px;
+  width: 100%;
+}
+
+.about_potepan h2 span {
+  font-family: 'Lato',sans-serif;
+  font-size: 38px;
+}
+
+.about_potepan p {
+  font-size: 16px;
+  line-height: 26px;
+  margin: 10px 0 16px;
+  font-weight: 500;
+}
+
+.about_potepan a {
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.about_potepan img {
+  margin-right: 5px;
+}
+
+.opacity {
+  transition: .3s;
+}
+
+.opacity:hover {
+  opacity: .7;
+}
+
+
+
+/*画面幅1080px以下-----------------------*/
+
+@media (max-width:1080px) {
+  
+  .hero {
+    background-image: none;
+  }
+  
+  header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+  }
+  
+  .header_container {
+    height: 21px;
+  }
+  
+  nav ul {
+    display: none;
+  }
+  
+  .hamburger_menu {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 21px;
+    z-index: 100;
+  }
+  
+  .hamburger_menu span {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border-radius: 4px
+  }
+  
+  .hamburger_menu span:nth-child(1) {
+    position: absolute;
+    top: 0;
+  }
+  
+  .hamburger_menu span:nth-child(2) {
+    position: absolute;
+    top: 50%;
+  }
+  
+  .hamburger_menu span:nth-child(3) {
+    position: absolute;
+    top: 100%;
+  }
+
+  .first_view {
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 61px;
+  }
+  
+  .first_view_sp {
+  display: none;
+}
+  
+  .about_wrapper {
+    background-color: #f79214;
+    padding: 44px 0;
+    position: relative;
+    top: 60px;
+  }
+
+}
+
+/*画面幅1024px以下-----------------------------*/
+
+@media (max-width: 1024px) {
+  
+  section.about {
+    flex-direction: column;
+  }
+  
+  video {
+    margin-bottom: 16px;
+    width: 75%;
+  }
+  
+  .about_potepan {
+    margin-left: 0;
+    width: 75%;
+  }
+}
+
+/*画面幅767px以下-------------------------------*/
+
+@media (max-width: 767px) {
+  
+  header {
+    padding: 15px 0;
+  }
+  
+  .header_container {
+    max-width: 100%;
+    margin: 0 20px;
+  }
+  
+  .header_logo {
+    height: 16px;
+  }
+  
+  .first_view {
+    background-image: none;
+    padding-top: 0;
+    padding-bottom: 35px;
+  }
+
+  .first_view_sp {
+    display: block;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    top: -10px;
+  }
+  
+  .firstview_container {
+    margin-top: -45vw;
+    max-width: none;
+    padding: 0 20px;
+  }
+  
+  .firstview_content {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .firstview_title {
+    font-size: 25px;
+    line-height: 36px;
+    margin: 0 calc(((100vw - 100%)/2)*-1) 15px;
+  }
+  
+  .firstview_images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  
+  .firstview_images img {
+    width: 27.5%;
+  }
+  
+  a.firstview_button_1.counseling_button.opacity {
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  a.firstview_button_2.opacity {
+    display: none;
+  }
+  
+  .about_wrapper {
+    padding: 30px 0;
+  }
+  
+  section.about {
+    max-width: none;
+    padding: 0 20px;
+  }
+  
+  .about_video {
+    width: 100%;
+  }
+  
+  .about_potepan {
+    margin-bottom: 0;
+    width: 100%;
+  }
+  
+  .about_potepan h2 {
+    font-size: 30px;
+  }
+  
+  .about_potepan h2 span {
+    font-size: 34px;
+    letter-spacing: 1px;
+  }
+  
+}
